@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+        .fade-in.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white">
+    <!-- Navbar header section -->
+    <header class="bg-gray-800 p-4 fixed w-full top-0 z-10 shadow-lg">
+        <nav class="container mx-auto flex justify-between items-center">
+            <h2 class="text-lg font-semibold">Made with ❤️ by Manya</h2>
+            <div class="space-x-4 hidden md:flex">
+                <a class="hover:text-purple-400 transition duration-300" href="#home">Home</a>
+                <a class="hover:text-purple-400 transition duration-300" href="#projects">Projects</a>
+                <a class="hover:text-purple-400 transition duration-300" href="#about">About</a>
+                <a class="hover:text-purple-400 transition duration-300" href="#services">Services</a>
+                <a class="hover:text-purple-400 transition duration-300" href="#contact">Contact Me</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main hero banner -->
+    <section id="home" class="text-center py-40 fade-in">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-center text-center md:text-left">
+            <div class="md:w-1/2 space-y-4">
+                <h3 class="text-2xl animate-pulse">Hello, I'm</h3>
+                <h1 class="text-6xl font-extrabold text-purple-500 drop-shadow-lg">Manya</h1>
+                <h2 class="text-3xl text-purple-400 mt-2 animate-typing overflow-hidden whitespace-nowrap border-r-4 border-white pr-2">
+                    A Frontend Developer
+                </h2>
+                
+                <p class="text-lg text-gray-400 mt-4 max-w-2xl mx-auto">
+                    Specializing in modern UI/UX, interactive web experiences, and responsive designs.  
+                    Let’s build something amazing together!
+                </p>
+                <p class="mt-6 text-lg italic text-gray-400 animate-pulse">
+                    "Turning ideas into reality with code ✨"
+                </p>
+                
+                <div class="flex space-x-6 mt-6">
+                    <i class="fab fa-html5 text-4xl text-orange-500"></i>
+                    <i class="fab fa-css3-alt text-4xl text-blue-500"></i>
+                    <i class="fab fa-js text-4xl text-yellow-500"></i>
+                    <i class="fab fa-react text-4xl text-blue-400"></i>
+                </div>
+                
+                <div class="mt-6 space-x-4">
+                    <a href="mailto:your-sinhamanya10@gmail.com" 
+                    class="px-6 py-3 bg-purple-600 hover:bg-white hover:text-purple-600 text-white rounded-md 
+                           transform hover:scale-110 transition duration-300 shadow-lg">
+                    Hire Me
+                 </a>
+                 
+                    <a href="./Manya_Resume_UPDATED.pdf" download="Manya_Resume"
+                    class="px-6 py-3 border border-white text-white hover:bg-white hover:text-purple-600 
+                           rounded-md transform hover:scale-110 transition duration-300 shadow-lg">
+                    Get Resume
+                 </a>
+                 
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center mt-6 md:mt-0 overflow-hidden">
+                <img src="./me.png" alt="Manya's Profile" 
+                    class="w-60 h-60 md:w-80 md:h-80 rounded-full shadow-lg border-4 border-purple-500 animate-pulse">
+            </div> 
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="text-center py-20 fade-in">
+        <h2 class="text-3xl font-bold">My Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 container mx-auto">
+            <div class="bg-gray-800 p-6 rounded-lg transform hover:scale-105 transition duration-300 shadow-lg">
+                <i class="fas fa-code text-purple-400 text-4xl"></i>
+                <h3 class="text-xl font-semibold mt-4">Web Development</h3>
+                <p class="mt-2">I create responsive and interactive websites using modern frontend technologies.
+                    "I specialize in crafting modern, fast, and fully responsive websites that not only look stunning but also deliver seamless functionality. Using technologies like HTML, CSS, JavaScript, and React, I create highly interactive and scalable web applications that cater to your business needs. Whether it's a personal portfolio, a business website, or a complex web application, I ensure top-notch performance and a smooth user experience."
+                </p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg transform hover:scale-105 transition duration-300 shadow-lg">
+                <i class="fas fa-paint-brush text-purple-400 text-4xl"></i>
+                <h3 class="text-xl font-semibold mt-4">UI/UX Design</h3>
+                <p class="mt-2">I design user-friendly and aesthetic UI/UX for an engaging user experience.
+                    A great design is more than just aesthetics—it's about user experience! I create visually appealing, intuitive, and engaging designs that captivate users and improve usability. By focusing on color psychology, typography, and user interaction, I design interfaces that are not only beautiful but also ensure effortless navigation, leading to higher user satisfaction and conversions."
+                </p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg transform hover:scale-105 transition duration-300 shadow-lg">
+                <i class="fas fa-mobile-alt text-purple-400 text-4xl"></i>
+                <h3 class="text-xl font-semibold mt-4">Responsive Design</h3>
+                <p class="mt-2">Ensuring a seamless experience across all devices with mobile-friendly designs.
+                    In today’s digital world, having a mobile-friendly website is essential. I build fully responsive designs that adapt perfectly to all screen sizes—whether it’s a desktop, tablet, or smartphone. By using flexible layouts, fluid grids, and CSS media queries, I ensure that your website looks and functions flawlessly across all devices, providing users with a consistent and engaging experience."
+
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="projects" class="text-center py-20 fade-in">
+        <h2 class="text-3xl font-bold">Featured Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 container mx-auto">
+            <div class="bg-gray-800 p-4 rounded-lg transform hover:scale-105 transition duration-300 shadow-lg">
+                <img src="./hospital.jpeg" alt="Project 1" class="rounded">
+                <p class="mt-2">Hospital Appointment System</p>
+                <p class="mt-2">MERN PROJECT</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg transform hover:scale-105 transition duration-300 shadow-lg">
+                <img src="./Resturant.png" alt="Project 2" class="rounded">
+                <p class="mt-2">Resturant Table Booking System</p>
+                <p class="mt-2">REACT+MONGODB PROJECT</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg transform hover:scale-105 transition duration-300 shadow-lg">
+                <img src="./Eshop.png" alt="Project 3" class="rounded">
+                <p class="mt-2">ESHOP Ecommerce PLatform</p>
+                
+                <p class="mt-2">REACT+TAILWIND CSS</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="text-center py-20 fade-in">
+        <h1 class="text-3xl font-bold">About Me</h1>
+        <p class="max-w-3xl mx-auto mt-4">Hey! It is great to see you here! 👋 I am Manya, a passionate frontend developer based in Pune with a love for crafting beautiful, user-friendly websites.
+            I have experience working with HTML, CSS, Bootstrap, Javascript,  and popular frameworks like React, and I’m always learning new technologies to enhance my skills.
+My goal is to create intuitive, engaging web experiences that delight users and help businesses grow.
+When I'm not coding, I enjoy exploring new design trends and improving my development techniques. Let's build something amazing together!
+
+Want to know more? Checkout my resume.
+Want to connect personally? Let's connect on LinkedIn.
+        </p>
+    </section>
+
+<!-- Contact Me Section -->
+<section id="contact" class="py-16 bg-gray-900 text-white">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold text-purple-500">Contact Me</h2>
+        <p class="text-lg text-gray-400 mt-2">Feel free to reach out to me anytime!</p>
+
+        <div class="mt-8 max-w-lg mx-auto bg-gray-800 p-6 rounded-lg shadow-lg">
+            <form id="contact-form" class="space-y-4">
+                <input type="text" id="name" placeholder="Your Name" required 
+                    class="w-full p-3 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-purple-500">
+                <input type="email" id="email" placeholder="Your Email" required 
+                    class="w-full p-3 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-purple-500">
+                <textarea id="message" placeholder="Your Message" required 
+                    class="w-full p-3 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-purple-500"></textarea>
+                <button type="submit" 
+                    class="w-full py-3 bg-purple-600 hover:bg-purple-500 text-white font-bold rounded-lg transition duration-300">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", async function (e) {
+            e.preventDefault();
+    
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+    
+            const response = await fetch("http://localhost:5000/contact", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ name, email, message }),
+            });
+    
+            const data = await response.json();
+            alert(data.message || data.error);
+        });
+    </script>
+    
+</section>
+
+    <!-- Footer section -->
+    <footer class="text-center py-6 bg-gray-800">
+        <h4>Copyright © 2025 All rights reserved | Created by Manya</h4>
+        <div class="flex justify-center space-x-6 mt-4">
+            
+           
+
+            <a href="https://www.linkedin.com/in/manya-3b7894243/" class="text-white text-2xl hover:text-purple-400 transition duration-300"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/ManyaS10" class="text-white text-2xl hover:text-purple-400 transition duration-300"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const fadeElements = document.querySelectorAll(".fade-in");
+            fadeElements.forEach(el => el.classList.add("show"));
+        });
+    </script>
+</body>
+</html>
